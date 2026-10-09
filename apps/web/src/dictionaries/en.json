@@ -1,0 +1,40 @@
+{
+  "home": {
+    "title": "Welcome to German Online Academy",
+    "subtitle": "Learn German effectively with expert tutors",
+    "courses": "View Courses",
+    "booking": "Book a Trial Lesson"
+  },
+  "nav": {
+    "home": "Home",
+    "courses": "Courses",
+    "about": "About Us",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "login": "Login"
+  },
+  "courses": {
+    "title": "Our Courses",
+    "description": "Explore our German courses for all levels."
+  },
+  "about": {
+    "title": "Teaching Approach",
+    "description": "We focus on interactive, practical learning."
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "q1": "How does it work?",
+    "a1": "Book a lesson, join online."
+  },
+  "contact": {
+    "title": "Contact Us",
+    "form_name": "Name",
+    "form_email": "Email",
+    "form_submit": "Send Message"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "not_found": "Page not found"
+  }
+}

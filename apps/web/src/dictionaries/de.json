@@ -1,0 +1,40 @@
+{
+  "home": {
+    "title": "Willkommen bei der German Online Academy",
+    "subtitle": "Lernen Sie effektiv Deutsch mit Experten",
+    "courses": "Kurse ansehen",
+    "booking": "Probestunde buchen"
+  },
+  "nav": {
+    "home": "Startseite",
+    "courses": "Kurse",
+    "about": "Über uns",
+    "faq": "FAQ",
+    "contact": "Kontakt",
+    "login": "Anmelden"
+  },
+  "courses": {
+    "title": "Unsere Kurse",
+    "description": "Entdecken Sie unsere Deutschkurse für alle Niveaus."
+  },
+  "about": {
+    "title": "Lehransatz",
+    "description": "Wir konzentrieren uns auf interaktives, praktisches Lernen."
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "q1": "Wie funktioniert das?",
+    "a1": "Buchen Sie eine Lektion, nehmen Sie online teil."
+  },
+  "contact": {
+    "title": "Kontakt",
+    "form_name": "Name",
+    "form_email": "E-Mail",
+    "form_submit": "Nachricht senden"
+  },
+  "common": {
+    "loading": "Lädt...",
+    "error": "Ein Fehler ist aufgetreten",
+    "not_found": "Seite nicht gefunden"
+  }
+}
