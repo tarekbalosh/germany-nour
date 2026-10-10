@@ -13,7 +13,7 @@ export function errorHandler(err: any, req: Request, res: Response, next: NextFu
   }
 
   const statusCode = err.status || 500;
-  const message = statusCode === 500 ? 'Internal server error' : err.message;
+  const message = err.message || 'Internal server error';
   
   // Log error safely here without secrets...
   console.error(`[Error] ${err.message}`);
