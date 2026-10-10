@@ -27,8 +27,9 @@ enum EnrollmentStatus {
 model User {
   id             String    @id @default(uuid())
   name           String
-  email          String    @unique
-  passwordHash   String
+  email          String?   @unique
+  phoneNumber    String?   @unique
+  passwordHash   String?
   role           Role      @default(STUDENT)
   preferredLocale String   @default("en")
   isActive       Boolean   @default(true)
@@ -40,6 +41,7 @@ model User {
   bookings       Booking[]
   materials      Material[]
   progressNotes  ProgressNote[]
+  certificates   Certificate[]
 }
 
 model Session {
@@ -60,8 +62,10 @@ model Course {
   descriptionEn     String
   descriptionDe     String
   descriptionAr     String
-  durationMinutes   Int
+  durationHours     Int          @default(0)
+  price             Float?       @default(0)
   isPublished       Boolean      @default(false)
+  hasFreeTrial      Boolean      @default(false)
   createdAt         DateTime     @default(now())
   updatedAt         DateTime     @updatedAt
 
@@ -126,4 +130,26 @@ model ProgressNote {
   visibleToStudent Boolean  @default(false)
   createdAt        DateTime @default(now())
   updatedAt        DateTime @updatedAt
+}
+
+model SystemSetting {
+  id                  String   @id @default("1")
+  academyName         String   @default("German Academy")
+  contactEmail        String   @default("admin@germanacademy.com")
+  contactPhone        String   @default("+49123456789")
+  defaultLanguage     String   @default("English")
+  timezone            String   @default("Europe/Berlin (CET)")
+  enableRegistrations Boolean  @default(true)
+  maintenanceMode     Boolean  @default(false)
+  updatedAt           DateTime @updatedAt
+}
+
+model Certificate {
+  id          String   @id @default(uuid())
+  studentId   String
+  student     User     @relation(fields: [studentId], references: [id], onDelete: Cascade)
+  title       String
+  fileUrl     String
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
 }

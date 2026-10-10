@@ -1,40 +1,185 @@
 {
-  "home": {
-    "title": "Willkommen bei der German Online Academy",
-    "subtitle": "Lernen Sie effektiv Deutsch mit Experten",
-    "courses": "Kurse ansehen",
-    "booking": "Probestunde buchen"
-  },
   "nav": {
     "home": "Startseite",
     "courses": "Kurse",
     "about": "Über uns",
     "faq": "FAQ",
     "contact": "Kontakt",
-    "login": "Anmelden"
+    "login": "Studentenportal",
+    "logo": "German Academy"
+  },
+  "footer": {
+    "brand_desc": "Premium-Deutschunterricht für Weltbürger. Meistern Sie die Sprache mit muttersprachlichen Experten.",
+    "quick_links": "Schnelllinks",
+    "legal": "Rechtliches",
+    "privacy_policy": "Datenschutz",
+    "terms": "Nutzungsbedingungen",
+    "newsletter": "Newsletter abonnieren",
+    "newsletter_desc": "Erhalten Sie die neuesten Updates und Lerntipps.",
+    "subscribe": "Abonnieren",
+    "email_placeholder": "E-Mail eingeben",
+    "rights": "Alle Rechte vorbehalten."
+  },
+  "hero": {
+    "badge": "Beginnen Sie Ihre Reise noch heute",
+    "title": "Meistern Sie die deutsche Sprache mit Zuversicht",
+    "subtitle": "Treten Sie der führenden Akademie zum Deutschlernen bei. Egal, ob Sie Anfänger sind oder das Goethe-Zertifikat anstreben, unsere erfahrenen muttersprachlichen Tutoren führen Sie zur Fließfähigkeit.",
+    "cta_primary": "Kurse entdecken",
+    "cta_secondary": "Kostenlose Probestunde buchen"
+  },
+  "features": {
+    "title": "Warum unsere Akademie wählen?",
+    "subtitle": "Wir bieten ein Premium-Lernerlebnis, das auf Ihre Ziele zugeschnitten ist.",
+    "items": [
+      {
+        "title": "Muttersprachliche Experten-Tutoren",
+        "description": "Lernen Sie von zertifizierten, muttersprachlichen Deutschprofis mit jahrelanger Unterrichtserfahrung."
+      },
+      {
+        "title": "Flexible Zeitpläne",
+        "description": "Buchen Sie Kurse, die zu Ihrem Lebensstil passen, rund um die Uhr in allen Zeitzonen verfügbar."
+      },
+      {
+        "title": "Zertifizierte Prüfungsvorbereitung",
+        "description": "Gezielte Vorbereitung auf Goethe-, TestDaF- und TELC-Prüfungen mit hohen Erfolgsquoten."
+      },
+      {
+        "title": "Interaktive Plattform",
+        "description": "Greifen Sie jederzeit und überall auf unsere hochmoderne digitale Lernumgebung zu."
+      }
+    ]
   },
   "courses": {
-    "title": "Unsere Kurse",
-    "description": "Entdecken Sie unsere Deutschkurse für alle Niveaus."
+    "title": "Unsere vorgestellten Kurse",
+    "subtitle": "Umfassende Programme vom absoluten Anfänger bis zum fortgeschrittenen Meister.",
+    "enroll": "Jetzt anmelden",
+    "duration": "Dauer:",
+    "price": "Preis:",
+    "level": "Niveau",
+    "minutes": "Minuten",
+    "hours": "Stunden",
+    "default_desc": "Keine Beschreibung verfügbar.",
+    "items": [
+      {
+        "id": "a1",
+        "title": "A1 Anfänger-Grundlagen",
+        "level": "A1",
+        "description": "Beginnen Sie Ihre Reise. Lernen Sie grundlegenden Wortschatz, Grammatik und alltägliche Konversationsfähigkeiten.",
+        "duration": "8 Wochen",
+        "price": "€299"
+      },
+      {
+        "id": "a2",
+        "title": "A2 Elementares Deutsch",
+        "level": "A2",
+        "description": "Bauen Sie auf Ihren Grundlagen auf. Drücken Sie sich in vertrauten Situationen und einfachen Diskussionen aus.",
+        "duration": "10 Wochen",
+        "price": "€349"
+      },
+      {
+        "id": "b1",
+        "title": "B1 Mittelstufe",
+        "level": "B1",
+        "description": "Erreichen Sie konversationelle Fließfähigkeit. Bewältigen Sie Reisen, Arbeit und drücken Sie Meinungen klar aus.",
+        "duration": "12 Wochen",
+        "price": "€399"
+      },
+      {
+        "id": "b2",
+        "title": "B2 Obere Mittelstufe",
+        "level": "B2",
+        "description": "Meistern Sie komplexe Texte und abstrakte Themen. Unverzichtbar für Arbeit oder Studium in Deutschland.",
+        "duration": "14 Wochen",
+        "price": "€449"
+      },
+      {
+        "id": "c1",
+        "title": "C1 Fortgeschrittene Kenntnisse",
+        "level": "C1",
+        "description": "Verstehen Sie ein breites Spektrum anspruchsvoller Texte und nutzen Sie die Sprache flexibel im beruflichen Umfeld.",
+        "duration": "16 Wochen",
+        "price": "€499"
+      },
+      {
+        "id": "exam",
+        "title": "Goethe-Prüfungsvorbereitung",
+        "level": "Alle Niveaus",
+        "description": "Intensive Probeprüfungen, Strategien und gezieltes Üben, um Ihr Goethe-Zertifikat zu bestehen.",
+        "duration": "6 Wochen",
+        "price": "€249"
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Erfolgsgeschichten von Studenten",
+    "subtitle": "Hören Sie von unseren Absolventen, die ihre Ziele mit uns erreicht haben.",
+    "items": [
+      {
+        "name": "Sarah Jenkins",
+        "role": "Universitätsstudentin",
+        "text": "Der B2-Kurs war unglaublich. Die Tutoren sind geduldig und die Materialien sind erstklassig. Ich habe meine Prüfung beim ersten Versuch bestanden!"
+      },
+      {
+        "name": "Ahmed Al-Farsi",
+        "role": "Softwareentwickler",
+        "text": "Ich brauchte Deutsch für meinen Jobwechsel nach Berlin. Die flexible Terminplanung und der praktische Fokus haben mir geholfen, mich schnell zu integrieren."
+      },
+      {
+        "name": "Maria Garcia",
+        "role": "Medizinische Fachkraft",
+        "text": "Die Vorbereitung auf die medizinische Sprachprüfung war entmutigend, aber das spezialisierte Tutoring hier gab mir das nötige Vertrauen."
+      }
+    ]
+  },
+  "faq_page": {
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Alles, was Sie über das Lernen bei uns wissen müssen.",
+    "items": [
+      {
+        "q": "Wie funktionieren Online-Kurse?",
+        "a": "Die Kurse finden live per Videokonferenz in unserem interaktiven virtuellen Klassenzimmer statt. Sie können in Echtzeit mit Ihrem Tutor und Ihren Mitschülern interagieren, genau wie in einem Präsenzkurs."
+      },
+      {
+        "q": "Brauche ich Vorkenntnisse in Deutsch?",
+        "a": "Ganz und gar nicht! Unser A1-Anfängerkurs richtet sich an absolute Anfänger. Wenn Sie Vorkenntnisse haben, können Sie unseren kostenlosen Einstufungstest machen."
+      },
+      {
+        "q": "Kann ich einen Kurs absagen oder verschieben?",
+        "a": "Ja, Sie können einen Kurs bis zu 24 Stunden im Voraus ohne Strafe über Ihr Studentenportal verschieben oder absagen."
+      },
+      {
+        "q": "Sind die Zertifikate anerkannt?",
+        "a": "Unsere Kurse richten sich nach den GER-Standards. Wir stellen ein Abschlusszertifikat aus. Für offizielle Anerkennungen (wie Visa) bereiten Sie unsere Prüfungsvorbereitungskurse auf die offiziellen Goethe-/TELC-Prüfungen vor."
+      },
+      {
+        "q": "Welche Zahlungsmethoden akzeptieren Sie?",
+        "a": "Wir akzeptieren alle gängigen Kreditkarten, PayPal und Banküberweisungen. Für längere Kurse bieten wir auch flexible Ratenzahlungen an."
+      }
+    ]
+  },
+  "contact_page": {
+    "title": "Nehmen Sie Kontakt auf",
+    "subtitle": "Wir sind hier, um zu helfen und jede Frage zu beantworten, die Sie vielleicht haben.",
+    "office": "Unser Büro",
+    "address": "Friedrichstraße 123, 10117 Berlin, Deutschland",
+    "email": "E-Mail",
+    "email_address": "info@germanacademy.edu",
+    "phone": "Rufen Sie uns an",
+    "phone_number": "+49 30 1234 5678",
+    "form": {
+      "name": "Vollständiger Name",
+      "name_placeholder": "Max Mustermann",
+      "email": "E-Mail Adresse",
+      "email_placeholder": "max@example.com",
+      "subject": "Betreff",
+      "subject_placeholder": "Wie können wir helfen?",
+      "message": "Nachricht",
+      "message_placeholder": "Erzählen Sie uns mehr über Ihre Bedürfnisse...",
+      "submit": "Nachricht senden"
+    }
   },
   "about": {
-    "title": "Lehransatz",
-    "description": "Wir konzentrieren uns auf interaktives, praktisches Lernen."
-  },
-  "faq": {
-    "title": "Häufig gestellte Fragen",
-    "q1": "Wie funktioniert das?",
-    "a1": "Buchen Sie eine Lektion, nehmen Sie online teil."
-  },
-  "contact": {
-    "title": "Kontakt",
-    "form_name": "Name",
-    "form_email": "E-Mail",
-    "form_submit": "Nachricht senden"
-  },
-  "common": {
-    "loading": "Lädt...",
-    "error": "Ein Fehler ist aufgetreten",
-    "not_found": "Seite nicht gefunden"
+    "title": "Über Uns",
+    "description": "Die German Academy ist eine führende Einrichtung, die sich der Bereitstellung von hochwertigem Deutschunterricht widmet. Unsere Mission ist es, Schülern aus aller Welt zu helfen, durch fachkundigen Unterricht und eine immersive Lernumgebung Fließend zu sprechen und kulturelles Verständnis zu erlangen."
   }
 }
