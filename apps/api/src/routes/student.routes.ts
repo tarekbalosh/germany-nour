@@ -22,7 +22,7 @@ router.get('/materials/:studentId', async (req: Request, res: Response, next: Ne
     const { studentId } = req.params;
     // Realistically, we'd find the courses the student is enrolled in, and return those materials.
     const enrollments = await prisma.enrollment.findMany({ where: { studentId } });
-    const courseIds = enrollments.map(e => e.courseId);
+    const courseIds = enrollments.map((e: any) => e.courseId);
     
     const materials = await prisma.material.findMany({
       where: { courseId: { in: courseIds } }

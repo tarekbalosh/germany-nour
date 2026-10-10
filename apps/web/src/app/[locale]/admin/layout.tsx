@@ -13,7 +13,7 @@ import {
 } from 'lucide-react';
 import { Link, usePathname } from '@/i18n/routing';
 
-export default function AdminLayout({ children, params }: { children: ReactNode, params: { locale: string } }) {
+export default function AdminLayout({ children, params }: { children: ReactNode, params: Promise<{ locale: string }> }) {
   const pathname = usePathname();
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [password, setPassword] = useState('');
