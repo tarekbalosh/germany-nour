@@ -5,7 +5,7 @@ The Nour Germany academy platform has been successfully structured and scaffolde
 ## Status
 - **Next.js Web**: Fully supports Next-Intl (AR, EN, DE). Dynamic routing implemented for \`/courses\`.
 - **Express API**: Fully functional endpoints for Courses, Bookings, Auth stubs, and Student Portal. Connected to PostgreSQL.
-- **Database**: Prisma connected successfully to Supabase. Migrations and seed applied.
+- **Database**: Prisma connected successfully to Neon PostgreSQL. Migrations and seed applied.
 
 ## Next Steps for User
 1. Configure Vercel and Render for deployment.

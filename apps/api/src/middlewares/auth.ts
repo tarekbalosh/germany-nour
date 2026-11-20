@@ -1,6 +1,5 @@
 import { Request, Response, NextFunction } from 'express';
-import { PrismaClient } from '@prisma/client';
-const prisma = new PrismaClient();
+import prisma from '../lib/prisma';
 
 export async function requireAuth(req: Request, res: Response, next: NextFunction) {
   // Simplistic MVP session check

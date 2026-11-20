@@ -1,3 +1,4 @@
+import 'dotenv/config';
 import { PrismaClient } from '@prisma/client';
 const prisma = new PrismaClient();
 
@@ -7,17 +8,20 @@ async function main() {
     {
       titleEn: 'German A1', titleDe: 'Deutsch A1', titleAr: 'الألمانية A1',
       descriptionEn: 'Beginner', descriptionDe: 'Anfänger', descriptionAr: 'مبتدئ',
-      level: 'A1', durationMinutes: 60, isPublished: true
+      level: 'A1', durationHours: 40, price: 150, isPublished: true
     },
     {
       titleEn: 'German A2', titleDe: 'Deutsch A2', titleAr: 'الألمانية A2',
       descriptionEn: 'Elementary', descriptionDe: 'Grundlagen', descriptionAr: 'أساسي',
-      level: 'A2', durationMinutes: 60, isPublished: true
+      level: 'A2', durationHours: 40, price: 150, isPublished: true
     }
   ];
 
   for (const c of courses) {
-    await prisma.course.create({ data: c });
+    const existing = await prisma.course.findFirst({ where: { level: c.level } });
+    if (!existing) {
+      await prisma.course.create({ data: c });
+    }
   }
   console.log('Done!');
 }

@@ -12,6 +12,7 @@ import studentRoutes from './routes/student.routes';
 import adminRoutes from './routes/admin.routes';
 import certificatesRoutes from './routes/certificates.routes';
 import path from 'path';
+import prisma from './lib/prisma';
 
 dotenv.config();
 
@@ -23,8 +24,29 @@ app.use((req, res, next) => {
   next();
 });
 
+const allowedOrigins = (process.env.WEB_ORIGIN || 'http://localhost:3000')
+  .split(',')
+  .map((o) => o.trim())
+  .filter(Boolean);
+
 app.use(helmet());
-app.use(cors({ origin: process.env.WEB_ORIGIN || 'http://localhost:3000', credentials: true }));
+app.use(
+  cors({
+    origin: (origin, callback) => {
+      if (!origin || allowedOrigins.includes(origin)) {
+        return callback(null, true);
+      }
+      if (
+        process.env.NODE_ENV !== 'production' &&
+        /^http:\/\/(localhost|127\.0\.0\.1)(:\d+)?$/.test(origin)
+      ) {
+        return callback(null, true);
+      }
+      return callback(new Error(`Origin ${origin} not allowed by CORS`));
+    },
+    credentials: true,
+  })
+);
 app.use(express.json({ limit: '1mb' }));
 app.use('/uploads', express.static(path.join(process.cwd(), 'uploads')));
 
@@ -44,6 +66,16 @@ app.use('/api/v1/certificates', certificatesRoutes);
 
 app.use(errorHandler);
 
-app.listen(port, () => {
+const server = app.listen(port, () => {
   console.log(`API server is running on port ${port}`);
 });
+
+const shutdown = async () => {
+  server.close(async () => {
+    await prisma.$disconnect();
+    process.exit(0);
+  });
+};
+
+process.on('SIGINT', shutdown);
+process.on('SIGTERM', shutdown);
